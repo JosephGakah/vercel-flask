@@ -1,0 +1,104 @@
+
+:root, :root .v-light, :root .v-light-head {
+  --bg-color: rgb(249 250 254);
+  --assistant-color: #efefef;
+  --theme-color: #e4dcd3;
+  --theme-color-font: #000;
+  --font-color: #0009;
+  --heading-color: #000;
+  --input-box-border-color: #000;
+  --circle-color: #000;
+  --border-color: #2828281a;
+  --smooth-color: #141414;
+  --reverse-color: #141414;
+  --reverse-heading-color: #fff;
+  --bg-btn: #f6fafd;
+  /**
+     Elementor color
+  */
+  --divider-color: var(--border-color);
+}
+
+:root .v-dark, :root .v-dark-head {
+  --bg-color: #131313;
+  --assistant-color: #191919;
+  --theme-color: #e4e4dd;
+  --font-color: #ddd;
+  --heading-color: #fff;
+  --input-box-border-color: #ffffff1a;
+  --border-color: #ffffff1a;
+  --circle-color: transparent;
+  --smooth-color: #f9f9f9;
+  --reverse-color: #f9f9f9;
+  --reverse-heading-color: #000;
+  --bg-btn: #0a0909;
+}
+:root .v-dark .background-theme, :root .v-dark.background-theme, :root .v-dark-head .background-theme, :root .v-dark-head.background-theme {
+  --font-color: #0009;
+  --heading-color: #000;
+}
+
+@media only screen and (max-width: 991px) {
+  .v-dark-head-mobile {
+    --bg-color: #131313;
+    --assistant-color: #191919;
+    --theme-color: #e4e4dd;
+    --font-color: #ddd;
+    --heading-color: #fff;
+    --border-color: #ffffff1a;
+    --smooth-color: #f9f9f9;
+    --reverse-color: #f9f9f9;
+    --reverse-heading-color: #000;
+    --bg-btn: #0a0909;
+  }
+  .v-dark-head-mobile .background-theme, .v-dark-head-mobile.background-theme {
+    --font-color: #0009;
+    --heading-color: #000;
+  }
+}
+
+.loader{
+    position: absolute;
+    left:50%;
+    margin-top:2rem;
+    transform: translate(-50%, -50%);
+    height:1px;
+    width:15rem;
+    background-color: gray;
+  }
+  .loading{
+    background-color: white;  
+    width:5rem;
+    height:1px;
+    animation: animation 1.8s infinite;
+  }
+  
+  @keyframes animation {
+      0% {
+          transform: translateX(0rem);
+      }
+      50% {
+          transform: translateX(10rem);
+      }
+      100% {
+          transform: translateX(0rem);
+      }
+    }
+
+    
+
+::-webkit-scrollbar {
+  width: 0.3vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+}
+
+/* TO STYLE THE SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
+}
+
+/* TO STYLE THE SCROLLBAR THUMB */
+::-webkit-scrollbar-thumb {
+  background-color: #19193f;
+  border: 0.1vw solid transparent;
+  border-radius: 5vw;
+}
